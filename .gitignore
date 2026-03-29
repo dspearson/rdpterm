@@ -1,0 +1,9 @@
+/target/
+Cargo.lock
+*.log
+*.png
+*.swp
+*.tmp
+certs/*.key
+certs/*.crt
+!certs/.gitkeep

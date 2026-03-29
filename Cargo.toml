@@ -1,0 +1,24 @@
+[package]
+name = "rdpterm"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.87"
+authors = ["Dominic Pearson <dsp@technoanimal.net>"]
+license = "ISC"
+description = "A secure RDP terminal server with full Unicode rendering"
+repository = "https://github.com/dspearson/rdpterm"
+
+[dependencies]
+rdpfb = { git = "https://github.com/dspearson/rdpfb.git" }
+alacritty_terminal = "0.25.1"
+portable-pty = "0.9"
+libc = "0.2"
+cosmic-text = "0.14"
+swash = "0.2"
+skrifa = "0.41"
+image = "0.25"
+clap = { version = "4", features = ["derive", "env"] }
+anyhow = "1.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tokio = { version = "1", features = ["full"] }
